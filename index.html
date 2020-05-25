@@ -8,6 +8,9 @@
     <meta name='author' content='Ashley + Auz'>
 
     <link rel='stylesheet' href='index.css'>
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   </head>
 
@@ -15,7 +18,7 @@
     <div id='project-name'>
       <h1 style="text-align:center">Flatiron Ranch</h1>
     </div>
-    <button id='new-toy-btn'>Hide the Heading!</button>
+      <button class='btn btn-warning btn-lg' id='new-toy-btn'>Hide the Game View!</button>
 
     <div id='login-view'>
       <div id='username'>
@@ -41,7 +44,8 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti alias commodi cumque temporibus ipsum hic quaerat esse quas? Libero perspiciatis vitae est repellendus cupiditate non eius hic culpa, dignissimos nemo!</p>
       </div>
     </div>
-    
+    <button data-toggle="collapse" data-target="#demo" class='btn btn-success'>Collapsible</button>
+  <div id="demo" class="collapse">
     <div id='game-view'>
       <div id='user-stats'>
         <!--
@@ -51,7 +55,12 @@
       </div>
       <div id='game'>
         <div id='game-stats'>
-          <p></p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
+            aria-valuemin="0" aria-valuemax="100" style="width:60%">
+              60% Complete (success)
+            </div>
+          </div>
         </div>
 
         <div id='pics'>
@@ -94,7 +103,7 @@
       </div>
       <button>Start another Game! :)</button>
     </div>
-    
+  </div>
     <script defer src='src/ashley.js'></script>
     <script defer src='src/auz.js'></script>
   </body>
