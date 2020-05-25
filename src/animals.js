@@ -1,0 +1,11 @@
+const animals = [
+  {
+    name: 'Cow'
+  }, 
+  {
+
+  }, 
+  {
+
+  }
+  ]
