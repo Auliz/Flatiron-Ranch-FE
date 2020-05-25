@@ -25,7 +25,6 @@ usernameForm.addEventListener('submit', event => {
     .then (response => response.json())
     .then (user => {
       renderUserStats(user);
-      startGameSession(user);
     })
 })
 
@@ -35,6 +34,12 @@ function renderUserStats (user) {
   userStatsContainer.innerHTML = `
   <p>Username: ${user.username}  |  Total Points: ${user.total_points}  |  Current language: </p>
   `
+}
+
+
+// console.log(userStatsContainer.lastChild)
+function startGameSession (user) {
+
 }
 
 ashleyMain();

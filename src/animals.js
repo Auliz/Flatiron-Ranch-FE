@@ -69,10 +69,6 @@ const animals = [
   },
   ]
 
-  function getAnimals () {
-    return animals  
-  }
-
 // 'Barn'
 // 'Bee'
 // 'Bison'
