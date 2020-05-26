@@ -63,9 +63,12 @@ function handleAnswerBtnClick () {
     if (event.target.tagName === 'BUTTON' && questionsAnswered < 5) {
       questionsAnswered++;
       checkAnswer(event);
+      updateGameStats();
+      updateUserStats();
     } else if (questionsAnswered === 5) {
       if (event.target.tagName === 'BUTTON') {
         console.log('GAME OVER')
+        
       }
     }
   })
@@ -76,7 +79,7 @@ function checkAnswer (event) {
     questionsCorrect++;
     getRandom(animals, 3);
 
-    console.log('CORRECT')
+    console.log('CORRECT');
   } else {
     questionsIncorrect++;
     animalsIncorrect.push({
