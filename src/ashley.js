@@ -69,6 +69,9 @@ startGameButton.addEventListener('click', event => {
       gameStatsNumbers.innerHTML = newGameStats
       gameStatsNumbers.dataset.gameId = newGame.id
     })
+
+  animalPic.style.display = 'block';
+  answerBtns.style.display = 'block'
 })
 
 // function startGameSession (user) {
@@ -141,6 +144,43 @@ function updateUserStats() {
     
       })
 }
+
+const gameContainer = document.querySelector('#game')
+
+function runGameEndModal () {
+
+  const modal = `
+    <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    `
+  gameContainer.innerHTML += modal 
+} 
+
+function removeButtonsAndAnimal () {
+  animalPic.style.display = 'none';
+  answerBtns.style.display = 'none'
+
+}
+
+
+
 
 
 
