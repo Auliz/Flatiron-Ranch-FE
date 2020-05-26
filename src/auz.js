@@ -13,11 +13,20 @@ const optionThreeBtn = document.querySelector('#option3')
 function auzMain () {
   handleAnswerBtnClick();
   getRandom(animals, 3);
+  handleUsernameFormSubmit();
 }
 
 // getRandom = function (list) {
 //   return list[Math.floor((Math.random()*list.length))];
-// } 
+// }
+
+function handleUsernameFormSubmit () {
+  const form = document.querySelector('#username-form')
+  form.addEventListener('submit', event => {
+    document.getElementById('login-view').style.display = 'none';
+    document.getElementById('game-view').style.display = 'block';
+  })
+}
 
 function getRandom(arr, n) {
   var result = new Array(n),
@@ -63,11 +72,10 @@ function handleAnswerBtnClick () {
     if (event.target.tagName === 'BUTTON' && questionsAnswered < 5) {
       questionsAnswered++;
       checkAnswer(event);
-    } else if (questionsAnswered === 5) {
-      if (event.target.tagName === 'BUTTON') {
-        console.log('GAME OVER')
-      }
-    }
+        if (questionsAnswered === 5) {
+          alert('GAME OVER')
+        }
+    } 
   })
 }
 
