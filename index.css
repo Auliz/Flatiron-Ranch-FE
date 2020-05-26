@@ -1,3 +1,4 @@
+
 .farm
 {
   position: relative;
@@ -7,16 +8,68 @@
 .animalone
 {
   position: absolute;
-  top: 600px;
-  left: 375px;
+  top: 550px;
+  left: 435px;
   width: 400px;
   height: 400px;
 }
 .animaltwo
 {
   position: absolute;
-  top: 500px;
+  top: 475px;
   left: 175px;
   width: 300px;
   height: 300px;
+}
+.btn-xl {
+  padding: 20px;
+  font-size: 35px !important;
+  border-radius: 50px;
+  border-color: #3c3c31 !important;
+  width: 30%;
+  height: 80%;
+  background-color: #94cb65 !important;
+}
+.btn-answer {
+  padding-top: 20px;
+  height: 100px;
+  width: 1000px;
+}
+.form-color {
+  background-color: #94cb65 !important;
+  color: white !important;
+}
+.main-logo {
+  width: 200px;
+  height: 200px;
+}
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#login-btn {
+  flex: 1 1 auto;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.77s;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px #eee;
+}
+#login-btn {
+  background-image: linear-gradient(to right, #C9DC87 0%, #74a322 40%, #5B9E48 50%, #74a322 60%, #C9DC87 100%);
+}
+#login-btn:hover {
+  background-position: right center;
+}
+#game-view {
+  display: none;
+}
+#body {
+background: #D3D3D3; 
+}
+#project-name {
+  background: #3c3c31;
 }
