@@ -67,44 +67,130 @@ const animals = [
     name: 'Turkey',
     image: 'https://www.epicentrofestival.com/wp-content/uploads/2019/12/Cartoon-Turkey-Images-Clip-Art-Turkey-Clipart-Free03063658-720x847.jpg'
   },
+  '====================================================='
+  {
+    id: 18,
+    name: 'Bee',
+    image: 'https://w0.pngwave.com/png/444/93/bee-cartoon-bee-png-clip-art.png'
+  }, 
+  {
+    id: 19,
+    name: 'Bison',
+    image: 'https://cdn1.vectorstock.com/i/1000x1000/30/50/cartoon-happy-bison-vector-21053050.jpg'
+  }, 
+  {
+    id: 20,
+    name: 'Crow',
+    image: 'https://cdn4.vectorstock.com/i/1000x1000/45/03/cartoon-crow-isolated-on-white-background-vector-27154503.jpg'
+  }, 
+  {
+    id: 21, 
+    name: 'Egg',
+    image: 'https://illustoon.com/photo/4771.png'
+  }, 
+  {
+    id: 22,
+    name: 'Farmer',
+    image: 'https://cdn5.vectorstock.com/i/1000x1000/36/34/cartoon-farmer-holding-a-rake-vector-24043634.jpg'
+  },
+  {
+    id: 23,
+    name: 'Goose',
+    image: 'https://image.freepik.com/free-vector/cartoon-goose-white-background_194935-44.jpg'
+  },
+  {
+    id: 24,
+    name: 'Hay',
+    image: 'https://cdn.clipart.email/a3e46ec779308e376243e4b76f59e4fb_844-hay-bales-stock-illustrations-cliparts-and-royalty-free-hay-_450-259.jpeg'
+  },
+  {
+    id: 25,
+    name: 'Hen',
+    image: 'https://i.pinimg.com/736x/08/36/41/083641776051c5204a6b457c31554a5e.jpg'
+  },
+  {
+    id: 26,
+    name: 'Hive',
+    image: 'https://banner2.cleanpng.com/20180404/rsw/kisspng-beehive-tree-hay-day-honey-bee-beehive-5ac5607f8b1160.8153780315228847355696.jpg'
+  },
+  {
+    id: 27,
+    name: 'Llama',
+    image: 'https://w1.pngwave.com/png/912/361/193/llama-camelid-alpaca-cartoon-livestock-snout-wildlife-png-clip-art.png'
+  },
+  {
+    id: 28, 
+    name: 'Bucket',
+    image: 'https://cdn5.vectorstock.com/i/1000x1000/30/74/wooden-bucket-with-milk-splash-isolated-on-white-vector-5543074.jpg'
+  },
+  {
+    id: 29,
+    name: 'Pail',
+    image: 'https://w7.pngwing.com/pngs/873/417/png-transparent-bucket-drawing-cartoon-milk-pail-color-lid-bucket-and-spade.png'
+  },
+  {
+    id: 30,
+    name: 'Tractor',
+    image: 'https://www.clipartmax.com/png/middle/54-545705_tractor-cartoon-farm-clip-art-tractor-cartoon-farm-clip-art.png'
+  },
+  {
+    id: 31,
+    name: 'Rake',
+    image: 'https://cdn3.vectorstock.com/i/1000x1000/23/87/rake-with-a-wooden-handle-icon-cartoon-style-vector-9582387.jpg'
+  },
+  {
+    id: 32, 
+    name: 'Scarecrow',
+    image: 'https://img.favpng.com/17/5/22/scarecrow-icon-scalable-vector-graphics-png-favpng-eiDqdFMs6iyjFNyQHk1jE6V6h.jpg'
+  },
+  {
+    id: 33,
+    name: 'Wheelbarrow',
+    image: 'https://image.shutterstock.com/image-vector/yellow-wheelbarrow-260nw-373977295.jpg'
+  }, 
+  {
+    id: 34,
+    name: 'Windmill',
+    image: 'https://mpng.subpng.com/20190506/pyp/kisspng-vector-graphics-farm-illustration-cattle-agricultu-windmill-clipart-rustic-frames-illustrations-hd-im-5ccfc82583d702.26037825155712106154.jpg'
+  }
+
   ]
 
   function getAnimals () {
     return animals  
   }
 
-// 'Barn'
-// 'Bee'
-// 'Bison'
-// 'Buffalo'
-// 'Bull'
-// 'Cat'
-// 'Chick'
-// 'Crow'
-// 'Dog'
-// 'Donkey'
-// 'Duck'
-// 'Duckling'
-// 'Egg'
-// 'Farmer'
-// 'Gander'
-// 'Goat'
-// 'Goose'
-// 'Hay'
-// 'Hen'
-// 'Hive'
-// 'Horse'
-// 'Lamb'
-// 'Llama'
-// 'Milk'
-// 'Pail'
-// 'Pig'
-// 'Piglet'
-// 'Plow'
-// 'Rabbit'
-// 'Rake'
-// 'Rooster'
-// 'Scarecrow'
-// 'Tracker'
-// 'Windmill'
+// --'Barn'
+// --'Bee'
+// --'Bison'
+// --'Buffalo'
+// --'Bull'
+// --'Cat'
+// --'Chick'
+// --'Crow'
+// --'Dog'
+// --'Donkey'
+// --'Duck'
+// --'Duckling'
+// --'Egg'
+// --'Farmer'
+// --'Gander'
+// --'Goat'
+// --'Goose'
+// --'Hay'
+// --'Hen'
+// --'Hive'
+// --'Horse'
+// --'Lamb'
+// --'Llama'
+// --'Milk'
+// --'Pail'
+// --'Pig'
+// --'Piglet'
+// --'Rabbit'
+// --'Rake'
+// --'Rooster'
+// --'Scarecrow'
+// --'Trackor'
+// --'Windmill'
 
