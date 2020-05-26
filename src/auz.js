@@ -25,6 +25,7 @@ function handleUsernameFormSubmit () {
   form.addEventListener('submit', event => {
     document.getElementById('login-view').style.display = 'none';
     document.getElementById('game-view').style.display = 'block';
+    removeButtonsAndAnimal();
   })
 }
 
@@ -75,7 +76,13 @@ function handleAnswerBtnClick () {
       updateGameStats();
       updateUserStats();
         if (questionsAnswered === 5) {
-          alert('GAME OVER')
+          alert('GAME OVER') 
+          runGameEndModal();
+          removeButtonsAndAnimal();         
+          questionsAnswered = 0;
+          questionsCorrect = 0;
+          questionsIncorrect = 0;
+          animalsIncorrect = [];
         }
     }
   })
