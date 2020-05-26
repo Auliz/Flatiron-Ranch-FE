@@ -88,7 +88,7 @@ function checkAnswer (event) {
       })
     getRandom(animals, 3);
     console.log('WRONG')
-  } 
+  }
 }
 
 auzMain();
