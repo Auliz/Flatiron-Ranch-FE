@@ -39,6 +39,7 @@ function loadAnimalPicture (randArr) {
   const animalToRender = randArr[randomIndex]
   animalPic.src = animalToRender.image
   animalPic.name = animalToRender.name
+  animalPic.dataset.id = animalToRender.id
   if (Math.random() < 0.5) {
     animalPic.className = 'animalone'
   } else {
@@ -48,8 +49,13 @@ function loadAnimalPicture (randArr) {
 
 function loadAnswers (randArr) {
   optionOneBtn.innerHTML = randArr[0].name
+  optionOneBtn.dataset.id = randArr[0].id
+
   optionTwoBtn.innerHTML = randArr[1].name
+  optionTwoBtn.dataset.id = randArr[1].id
+  
   optionThreeBtn.innerHTML = randArr[2].name
+  optionThreeBtn.dataset.id = randArr[2].id
 }
 
 function handleAnswerBtnClick () {
@@ -66,12 +72,11 @@ function handleAnswerBtnClick () {
 }
 
 function checkAnswer (event) {
-  if (event.target.innerHTML === animalPic.name) {
+  if (event.target.dataset.id == animalPic.dataset.id) {
     questionsCorrect++;
     getRandom(animals, 3);
 
     console.log('CORRECT')
-    console.log(questionsCorrect)
   } else {
     questionsIncorrect++;
     animalsIncorrect.push({
@@ -79,10 +84,7 @@ function checkAnswer (event) {
       correctAnswer: animalPic.name
       })
     getRandom(animals, 3);
-
     console.log('WRONG')
-    console.log(questionsIncorrect)
-    console.log(animalsIncorrect)
   }
 }
 

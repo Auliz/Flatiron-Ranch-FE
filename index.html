@@ -1,22 +1,32 @@
 <!doctype html>
 
-<html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <title>Flatiron Ranch</title>
+<head>
+  <meta charset='utf-8'>
+    <title>Flatiron Farm</title>
+    <link rel="shortcut icon" type="image/png" href="images/cow_logo.png">
     <meta name='description' content='Flatiron Ranch'>
     <meta name='author' content='Ashley + Auz'>
-
+    
     <link rel='stylesheet' href='index.css'>
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   </head>
-
+  
+  <html lang='en'>
   <body>
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
     <div id='project-name'>
-      <h1 style="text-align:center">Flatiron Ranch</h1>
+      <h1 style="text-align:center">Flatiron Farm</h1>
     </div>
       <button class='btn btn-warning btn-lg' id='new-toy-btn'>Hide the Game View!</button>
 
@@ -71,13 +81,13 @@
 
         <div id='pics'>
           <img class="farm" src='https://cdn3.vectorstock.com/i/1000x1000/66/17/cartoon-of-farm-background-vector-8546617.jpg'>
-          <img class='' id='animal-pic' name='' src=''>
+          <img class='' data-id='' id='animal-pic' name='' src=''>
         </div>
 
         <div id='answer-btns'>
-          <button id='option1'>Cow</button>
-          <button id='option2'>Horse</button>
-          <button id='option3'>Pig</button>
+          <button id='option1' data-id=''></button>
+          <button id='option2' data-id=''></button>
+          <button id='option3' data-id=''></button>
         </div>
       </div>
     </div>
