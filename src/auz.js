@@ -77,8 +77,11 @@ function handleAnswerBtnClick () {
       updateUserStats();
         if (questionsAnswered === 5) {
           alert('GAME OVER') 
-          runGameEndModal();
-          removeButtonsAndAnimal();         
+          removeButtonsAndAnimal();
+          numAnswered.style.display = 'none';
+          numCorrect.style.display = 'none';
+          runGameEndStats();
+          // gameStatsNumbers.style.display = 'none';         
           questionsAnswered = 0;
           questionsCorrect = 0;
           questionsIncorrect = 0;

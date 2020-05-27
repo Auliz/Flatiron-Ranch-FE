@@ -11,6 +11,13 @@
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $(".btn").click(function(){
+              $("#myModal").modal('show');
+          });
+      });
+  </script>
 
   </head>
   
@@ -58,6 +65,9 @@
     <div id='game-view' class='container'>
       <div id='user-session'>
         <div id='user-stats'> 
+          <p id='user-username' data-user-id=''></p>
+          <p id='user-total-points' data-total-points=''></p>
+          <p>Current language: </p>
           <!--
             username | total points | current language (maybe own div?)
             google language selector
@@ -68,7 +78,8 @@
       <div id='game'>
         <div id='game-stats'>
           <div id='game-stats-numbers' data-game-id=''>
-            
+            <p id='num-answered'></p>
+            <p id='num-correct'></p>
           </div>
           <!-- <div class="progress">
             <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
@@ -82,7 +93,9 @@
           <img class='farm' src='https://cdn3.vectorstock.com/i/1000x1000/66/17/cartoon-of-farm-background-vector-8546617.jpg'>
           <img class='' data-id='' id='animal-pic' name='' src=''>
         </div>
+        <div id='game-end-stats'>
 
+        </div>
         <div id='answer-btns' class='btn-answer text-center'>
           <button id='option1' data-id=''class='btn btn-success btn-xl'></button>
           <button id='option2' data-id=''class='btn btn-success btn-xl'></button>
