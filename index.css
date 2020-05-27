@@ -1,25 +1,8 @@
-
 .farm
 {
   position: relative;
   top: 0;
   left: 0;
-}
-.animalone
-{
-  position: absolute;
-  top: 550px;
-  left: 435px;
-  width: 400px;
-  height: 400px;
-}
-.animaltwo
-{
-  position: absolute;
-  top: 475px;
-  left: 175px;
-  width: 300px;
-  height: 300px;
 }
 .btn-xl {
   padding: 20px;
@@ -30,18 +13,17 @@
   height: 80%;
   background-color: #94cb65 !important;
 }
-.btn-answer {
-  padding-top: 20px;
-  height: 100px;
-  width: 1000px;
-}
-.form-color {
-  background-color: #94cb65 !important;
-  color: white !important;
+.btn-start-game {
+  padding-top: 5px !important;
+  padding-bottom: 20px;
+  height: auto;
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-logo {
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: 400px;
 }
 .img-center {
   display: block;
@@ -72,4 +54,28 @@ background: #D3D3D3;
 }
 #project-name {
   background: #3c3c31;
+}
+.parent {
+  padding-top: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px black solid;
+}
+.image2 {
+  position: absolute;
+  top: 580px;
+  left: 580px;
+  height: 100px;
+  width: 100px;
+}
+.farm-circle {
+  border-radius: 25px;
+  height: 750px;
+  width: auto;
 }
