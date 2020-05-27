@@ -49,11 +49,11 @@ function loadAnimalPicture (randArr) {
   animalPic.src = animalToRender.image
   animalPic.name = animalToRender.name
   animalPic.dataset.id = animalToRender.id
-  if (Math.random() < 0.5) {
-    animalPic.className = 'animalone'
-  } else {
-    animalPic.className = 'animaltwo'
-  }
+  // if (Math.random() < 0.5) {
+  //   animalPic.className = 'animalone'
+  // } else {
+  //   animalPic.className = 'animaltwo'
+  // }
 }
 
 function loadAnswers (randArr) {
@@ -73,12 +73,20 @@ function handleAnswerBtnClick () {
       questionsAnswered++;
       checkAnswer(event);
       updateGameStats();
-      updateUserStats();
         if (questionsAnswered === 5) {
           alert('GAME OVER')
+          updateUserStats();
+          resetGameData();
         }
     }
   })
+}
+
+function resetGameData () {
+  questionsAnswered = 0;
+  questionsCorrect = 0;
+  questionsIncorrect = 0;
+  animalsIncorrect = [];
 }
 
 function checkAnswer (event) {
