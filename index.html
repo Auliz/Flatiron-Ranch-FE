@@ -11,6 +11,13 @@
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $(".btn").click(function(){
+              $("#myModal").modal('show');
+          });
+      });
+  </script>
 
   </head>
   
@@ -56,15 +63,23 @@
     <!-- <button data-toggle="collapse" data-target="#demo" class='btn btn-success'>Collapsible</button>
   <div id="demo" class="collapse"> -->
     <div id='game-view' class='container'>
-      <div id='user-session' class='container text-center'>
-        <div id='user-stats' class='jumbotron'>
+      <div id='user-session'>
+        <div id='user-stats'> 
+          <p id='user-username' data-user-id=''></p>
+          <p id='user-total-points' data-total-points=''></p>
+          <p>Current language: </p>
+          <!--
+            username | total points | current language (maybe own div?)
+            google language selector
+          -->
         </div>
         <button id='start-game-btn' class='btn btn-success btn-start-game'>Start Game! :)</button>
       </div>
       <div id='game'>
-        <div id='game-stats' class='container text-center'>
-          <div id='game-stats-numbers' data-game-id='' class='jumbotron'>
-            
+        <div id='game-stats'>
+          <div id='game-stats-numbers' data-game-id=''>
+            <p id='num-answered'></p>
+            <p id='num-correct'></p>
           </div>
           <!-- <div class="progress">
             <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40"
@@ -78,7 +93,9 @@
           <img class='image1 img-center farm-circle' src='images/FlatironFarmBackgroundSmaller.png'>
           <img class='image2' data-id='' id='animal-pic' name='' src=''>
         </div>
+        <div id='game-end-stats'>
 
+        </div>
         <div id='answer-btns' class='btn-answer text-center'>
           <button id='option1' data-id=''class='btn btn-success btn-xl'></button>
           <button id='option2' data-id=''class='btn btn-success btn-xl'></button>
