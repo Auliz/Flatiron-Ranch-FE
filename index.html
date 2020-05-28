@@ -11,29 +11,24 @@
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function(){
-          $(".btn").click(function(){
-              $("#myModal").modal('show');
-          });
-      });
-  </script>
+    
+  <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+
 
   </head>
   
   <html lang='en'>
-  <body id='body'>
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-    }
-    </script>
-    <script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+  <body id='body'>
+    <!--<audio controls autoplay id='myAudio' style='display: none' src="sounds/cow.mp3">
+      <source src="sounds/cow.mp3" type="audio/mpeg">
+    </audio>-->
+
+    <button class="playSound">Play Sound</button>
 
     <div id='project-name' class='jumbotron'>
       <img class='main-logo img-center' src='images/main-logo.png'>
+      <audio preload='auto' id='logo-sound' src=''></audio>
     </div>
     <div id='login-view' class='container'>
       <div id='username'>
@@ -57,7 +52,7 @@
         </form>
       </div>
       <div class='jumbotron'>
-        <p>Hi, ya'll, welcome to the Flatiron Farm! We're so glad to have you on the ranch today. Lend Farmer Frank a helping hand by identifying everything on his farm. If it's an animal, you can click on it to hear what it sounds like.</p>
+        <p>Hi, ya'll, welcome to the Flatiron Farm! We're so glad to have you on the ranch today. Lend Farmer Raza a helping hand by identifying everything on his farm. If it's an animal, you can click on it to hear what it sounds like.</p>
       </div>
     </div>
     <!-- <button data-toggle="collapse" data-target="#demo" class='btn btn-success'>Collapsible</button>
@@ -92,6 +87,7 @@
         <div id='pics' class='parent'>
           <img class='image1 img-center farm-circle' src='images/FlatironFarmBackgroundSmaller.png'>
           <img class='image2' data-id='' id='animal-pic' name='' src=''>
+          <audio preload='auto' id='animal-sound' src=''></audio>
         </div>
         <div id='game-end-stats'>
 
