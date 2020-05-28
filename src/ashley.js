@@ -83,6 +83,10 @@ startGameButton.addEventListener('click', event => {
 
   animalPic.style.display = 'block';
   answerBtns.style.display = 'block'
+
+  let audio = new Audio('sounds/cowboy_theme.mp3');
+  audio.volume = 0.02;
+  audio.play(); 
 })
 
 // function startGameSession (user) {
@@ -132,6 +136,7 @@ function updateUserStats() {
       
       totalPointsContainer.innerText = `Total Points: ${userTotalPoints}` 
       totalPointsContainer.dataset.totalPoints = userTotalPoints
+      console.log(totalPointsContainer.dataset.totalPoints)
       
       const updatedTotalPoints = {
         total_points: userTotalPoints
@@ -189,7 +194,7 @@ function runGameEndStats () {
     <p>Correct Answers: ${questionsCorrect}</p>
     <p>Questions Answered: ${questionsAnswered}</p>
     <p>Game Points: ${questionsCorrect * 10}</p>
-    <p>Your Total Points: ${totalPointsContainer.dataset.totalPoints}</p>
+    <p>Your Total Points: ${parseInt(totalPointsContainer.dataset.totalPoints) + (questionsCorrect * 10)}</p>
     <p>Farmer Raza wants you to practice:</p>
       <ul>
         ${renderIncorrectAnimals()}
@@ -225,10 +230,34 @@ function removeButtonsAndAnimal () {
 
 }
 
-
-
-
-
-
-
 ashleyMain();
+
+const mainLogo = document.querySelector('.main-logo');
+const logoSound = document.querySelector('#animal-sound')
+
+mainLogo.addEventListener('click', event => {
+  logoSound.src = 'sounds/cow.mp3';
+  animalSound.play();
+})
+
+
+
+// var audio = new Audio('sounds/cow.mp3');
+// audio.play(); 
+// console.log(audio)
+
+// animalPic.addEventListener('click', event => {
+//   // var x = document.getElementById("myAudio")
+//   // x.play()
+//   var audio = new Audio('sounds/cow.mp3');
+//   audio.play(); 
+// });
+
+// var soundID = "Thunder";
+// function loadSound () {
+//   createjs.Sound.registerSound("assets/thunder.mp3", soundID);
+// }
+
+// function playSound () {
+//   createjs.Sound.play(soundID);
+// }
