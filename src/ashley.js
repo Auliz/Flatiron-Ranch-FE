@@ -1,5 +1,6 @@
 function ashleyMain () {
   loadLeaderboard();
+  logoSoundClick();
 }
 const tl = gsap.timeline();
 const usersUrl = 'http://localhost:3000/users'
@@ -71,7 +72,7 @@ const onFarmCorrect = document.querySelector('#on-farm-display-correct')
 const gameStatsNumbers = document.querySelector('#pics')
 
 startGameButton.addEventListener('click', event => {
-  // gameEndStatsContainer.innerHTML = ''
+  cardToAnimate.style.display = 'none';
   const user_id = parseInt(userStatsContainer.firstElementChild.dataset.userId)
   const createNewGame = {
     user_id,
@@ -96,7 +97,7 @@ startGameButton.addEventListener('click', event => {
     })
 
   animalPic.style.display = 'block';
-  answerBtns.style.display = 'block'
+  answerBtns.style.display = 'block';
 
   let audio = new Audio('sounds/cowboy_theme.mp3');
   audio.volume = 0.02;
@@ -179,7 +180,7 @@ function runGameEndStats () {
   gamePoints.innerHTML = `${questionsCorrect * 10}`
   totalPoints.innerHTML = `${parseInt(totalPointsContainer.dataset.totalPoints) + (questionsCorrect * 10)}`
   renderIncorrectAnimals();
-  tl.from(cardToAnimate, {duration: 0.5, opacity: 0, y: -700, ease: "power2.out"});
+  tl.from(cardToAnimate, {duration: 1.57, opacity: 0, y: -1000, ease: "power2.out"});
 }
 
 let allIncorrectAnimals = []
@@ -215,41 +216,17 @@ Array.prototype.unique = function() {
   });
 }
 
+function logoSoundClick () {
+  const mainLogo = document.querySelector('.main-logo');
+  const logoSound = document.querySelector('#logo-sound');
+  mainLogo.addEventListener('click', event => {
+    logoSound.src = 'sounds/cow.mp3';
+    logoSound.play();
+  })
+}
 function removeButtonsAndAnimal () {
   animalPic.style.display = 'none';
   answerBtns.style.display = 'none'
-
 }
 
 ashleyMain();
-
-const mainLogo = document.querySelector('.main-logo');
-const logoSound = document.querySelector('#animal-sound')
-
-mainLogo.addEventListener('click', event => {
-  logoSound.src = 'sounds/cow.mp3';
-  animalSound.play();
-})
-
-
-
-
-// var audio = new Audio('sounds/cow.mp3');
-// audio.play(); 
-// console.log(audio)
-
-// animalPic.addEventListener('click', event => {
-//   // var x = document.getElementById("myAudio")
-//   // x.play()
-//   var audio = new Audio('sounds/cow.mp3');
-//   audio.play(); 
-// });
-
-// var soundID = "Thunder";
-// function loadSound () {
-//   createjs.Sound.registerSound("assets/thunder.mp3", soundID);
-// }
-
-// function playSound () {
-//   createjs.Sound.play(soundID);
-// }

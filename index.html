@@ -15,10 +15,9 @@
   
   <html lang="en">
   <body id="body">
-    
-
     <div id="project-name" class="jumbotron">
       <img class="main-logo img-center" src="images/main-logo.png">
+      <audio preload="auto" id="logo-sound" src=""></audio>
     </div>
     <div id="translate-btns" class="text-center">
       <button id="en-btn" class="btn btn-success">English</button> <button id="sp-btn" class="btn btn-success">Spanish</button> <button id="cr-btn" class="btn btn-success">Croatian</button>
@@ -34,7 +33,7 @@
           </div>
           <div id="left-column-login" class="col-sm-6">
             <div>
-              <img id="farmer-raza-tb" src="images/FarmerRazaTextBox.png">
+              <img id="farmer-raza-tb" src="images/FarmerRazaGreeting.png">
             </div>
           </div>
         </div>
@@ -88,7 +87,15 @@
         <button id="start-game-btn" class="btn btn-start-game trn">Start Game</button>
       </div>
         <div id="pics" class="parent container" data-game-id="">
-          <img class="image1 img-center farm-circle" src="images/FlatironFarmBackgroundSmaller.png">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="image1 img-center farm-circle" src="images/FlatironFarmBackgroundSmaller.png">
+            </div>
+            <div class="col-lg-6">
+              <img id="fraza" src="images/FarmerRazaTextBox.png">
+              <!-- <p id="fraza-text">Yikes!   You </br>  don’t farm </br>very much...</p> -->
+            </div>
+          </div>
           <img class="image2" data-id="" id="animal-pic" name="" src="">
           <audio preload='auto' id='animal-sound' src=''></audio>
           <p id="on-farm-display-answered"></p>
@@ -104,13 +111,16 @@
               </div>
               <div id="left-column" class="col-sm-6">
                 </br>
-                <p class="trn" style="display: inline;">Correct Answers:</p> <p id="ans-correct"></p>
-                <p class="trn" style="display: inline;">Questions Answered:</p> <p id="total-answered"></p>
-                <p class="trn" style="display: inline;">Game Points:</p> <p id="game-points"></p>
+                <p class="trn" style="display: inline;">Correct Answers:</p> <p id="ans-correct"></p></br>
+                <p class="trn" style="display: inline;">Questions Answered:</p> <p id="total-answered"></p></br>
+                <p class="trn" style="display: inline;">Game Points:</p> <p id="game-points"></p></br>
                 <p class="trn" style="display: inline;">Your Total Points:</p> <p id="total-points"></p>
               </div>
             </div>
           </div>
+          <!-- <div id="farmer-raza-game" style="display: inline;">
+            <img id="fraza" src="images/FarmerRazaTextBox.png">
+          </div> -->
         </div>
         <div id="answer-btns" class="btn-answer text-center">
           <button id="option1" data-id="" class="btn btn-success btn-xl"></button>
