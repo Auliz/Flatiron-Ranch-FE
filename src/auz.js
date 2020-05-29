@@ -57,9 +57,6 @@ function loadAnimalPicture (randArr) {
   animalSound.src = animalToRender.sound
   if (animalSound.src !== '') {
     animalPic.addEventListener('click', event => {
-      // var x = document.getElementById("myAudio")
-      // x.play()
-      // let audio = new Audio(`${animalToRender.sound}`);
       animalSound.play(); 
     })
   }
