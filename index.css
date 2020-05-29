@@ -30,31 +30,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-#login-btn {
-  flex: 1 1 auto;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.77s;
-  background-size: 200% auto;
-  color: white;
-  text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
-  box-shadow: 0 0 20px #eee;
-}
-#login-btn {
-  background-image: linear-gradient(to right, #C9DC87 0%, #74a322 40%, #5B9E48 50%, #74a322 60%, #C9DC87 100%);
-}
-#login-btn:hover {
-  background-position: right center;
-}
-#game-view {
-  display: none;
-}
-#body {
-background: #D3D3D3; 
-}
-#project-name {
-  background: #3c3c31;
-}
 .parent {
   padding-top: 20px;
   position: relative;
@@ -66,6 +41,7 @@ background: #D3D3D3;
   top: 0;
   left: 0;
   border: 1px black solid;
+  box-shadow: 0 0 20px black;
 }
 .image2 {
   position: absolute;
@@ -78,4 +54,130 @@ background: #D3D3D3;
   border-radius: 25px;
   height: 750px;
   width: auto;
+}
+.icon-size {
+  font-size: 25px;
+  display: inline;
+}
+#login-btn, #start-game-btn {
+  flex: 1 1 auto;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.77s;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px #eee;
+}
+#login-btn, #start-game-btn {
+  background-image: linear-gradient(to right, #C9DC87 0%, #74a322 40%, #5B9E48 50%, #74a322 60%, #C9DC87 100%);
+}
+#login-btn:hover, #start-game-btn:hover {
+  background-position: right center;
+}
+#game-view {
+  display: none;
+}
+#body {
+background: #D3D3D3; 
+}
+#project-name {
+  background: #a5ba93;
+}
+#howdy {
+  font-size: 55px;
+  margin-top: 5px;
+}
+#heading-tron {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#user-username, #user-total-points, #user-current-lang {
+    display: inline;
+}
+#user-stats-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#on-farm-display-answered {
+  position: absolute;
+  top: 100px;
+  left: 325px;
+  font-size: xx-large;
+}
+#on-farm-display-correct {
+  position: absolute;
+  top: 100px;
+  right: 275px;
+  font-size: xx-large;
+}
+#heading-span-tag, #user-current-username, #user-current-points, #stats-p, #stats-p-text, #farm-finds, #ans-correct, #total-answered, #game-points, #total-points {
+  display: inline;
+}
+#game-end-stats {
+  position: absolute;
+  top: 450px;
+  right: 285px;
+  height: 300px;
+  width: 580px;
+  padding: 15px 15px;
+  border: 2px black solid;
+  box-shadow: 0 0 30px black;
+}
+#left-column {
+  border-left: 1px black groove;
+  position: relative;
+  top: 10px;
+  bottom: 10px;
+  left:0px;
+  padding-top: 5px;
+}
+#farmer-raza-tb {
+  display: inline;
+  height: 400px;
+  width: auto;
+  margin-left: 120px;
+}
+#left-login-col {
+  margin-top: 93px;
+  /* border-right: 1px black groove;
+  position: relative;
+  top: 10px;
+  bottom: 10px;
+  left:0px;
+  padding-top: 5px; */
+}
+/* #left-login-col {
+  border-right: 1px black groove;
+  position: relative;
+  top: 10px;
+  bottom: 10px;
+  left:0px;
+  padding-top: 5px;
+} */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#animal-pic:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+body {
+  font-family: "Herculanum", fantasy;
+}
+
+h3 {
+  padding-bottom: 15px;
 }
