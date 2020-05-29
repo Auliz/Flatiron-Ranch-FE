@@ -61,7 +61,7 @@ function renderUserStats (user) {
 
   usernameContainer.dataset.userId = user.id
   currentUser.innerText = user.username
-  currentUserPoints.innerText = user.total_points
+  currentUserPoints.innerHTML = `${user.total_points} (${badgeSelector(user.total_points)})`
 
   totalPointsContainer.dataset.totalPoints = user.total_points
 }
@@ -143,9 +143,11 @@ function updateUserStats() {
       userInfo.user_games.forEach(game => {
         userTotalPoints += (game.num_correct * 10)
       })
-      const userTotalPointsContainer = document.querySelector('#user-current-points')
-      userTotalPointsContainer.innerText = `${parseInt(userTotalPoints)}`;
-      totalPointsContainer.dataset.totalPoints = parseInt(userTotalPoints);
+      const userTotalPointsContainer = document.querySelector('#user-current-points');
+      const userTotalPointsNumber = parseInt(userTotalPoints);
+
+      userTotalPointsContainer.innerHTML = `${userTotalPointsNumber} (${badgeSelector(userTotalPointsNumber)})`;
+      totalPointsContainer.dataset.totalPoints = userTotalPointsNumber;
 
       const updatedTotalPoints = {
         total_points: userTotalPoints
@@ -184,7 +186,7 @@ function runGameEndStats () {
   tl.from(cardToAnimate, {duration: 1.57, opacity: 0, y: -1000, ease: "power2.out"});
 }
 
-let allIncorrectAnimals = []
+let allIncorrectAnimals = [];
 let uniqueAnimalsList
 
 function renderIncorrectAnimals () {
@@ -231,7 +233,19 @@ function removeButtonsAndAnimal () {
 }
 
 function badgeSelector(points) {
-  if (points) 
+  const pointsNumber = parseInt(points)
+
+  if (pointsNumber <= 500) {
+    return `<i class="fas fa-egg icon-size trn"></i>`
+  } else if (500 < pointsNumber <= 1000) {
+    return `<i class="fas fa-hand-paper icon-size trn"></i>`
+  } else if (1000 < pointsNumber <= 2500) {
+    return `<i class="fas fa-hat-tractor icon-size trn"></i>`
+  } else if (2500 < pointsNumber <= 5000) {
+    return `<i class="fas fa-piggy-bank icon-size trn"></i>`
+  } else if (5000 < pointsNumber) {
+    return `<i class="fas fa-hat-cowboy icon-size trn"></i>`
+  }
 }
 
 ashleyMain();
