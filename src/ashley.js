@@ -226,7 +226,7 @@ const logoSound = document.querySelector('#animal-sound')
 
 mainLogo.addEventListener('click', event => {
   logoSound.src = 'sounds/cow.mp3';
-  animalSound.play();
+  logoSound.play();
 })
 
 
