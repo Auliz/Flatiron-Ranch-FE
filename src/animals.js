@@ -3,103 +3,105 @@ const animals = [
     id: 1,
     name: 'Goat',
     sound: 'sounds/goat.mp3',
-    image: 'https://www.netclipart.com/pp/m/356-3560075_clipart-goat-head-clipart-three-billy-goats-gruff.png'
+    image: 'images/animals/goat.png'
   },
   {
     id: 2,
     name: 'Sheep',
     sound: 'sounds/sheep.mp3',
-    image: 'https://lh3.googleusercontent.com/proxy/0RDo9AF6sVLU8sWjiBoVY1Cvl380NGnCmCqXSI8jBqztSPMrGMB0FfMhPVlQHXGYfoZ1oc9RO6yawBXTekNzauBPBTgWiQjJ1lHdGNIGf1vxAhoC7qdu-Qtff15_1vUQ1RUsBEY_'
+    image: 'images/animals/sheep.png'
   },
   {
     id: 3,
     name: 'Lamb',
     sound: 'sounds/lamb.mp3',
-    image: 'https://www.clipartmax.com/png/middle/100-1006423_baby-sheep-cartoon-sheep-png.png'
+    image: 'images/animals/lamb.png'
   },
   {
     id: 4,
-    name: 'Cow',
+    name: 'Calf',
     sound: 'sounds/cow.mp3',
-    image: 'https://webstockreview.net/images/clipart-cow-cows-milk-11.png'
+    image: 'images/animals/calf.png'
   },
   {
     id: 5,
     name: 'Bull',
     sound: 'sounds/bull.mp3',
-    image: 'https://i7.pngguru.com/preview/583/732/832/cattle-drawing-illustration-vector-painted-cute-bull.jpg'
+    image: 'images/animals/bull.png'
   },
   {
     id: 6,
     name: 'Chicken',
     sound: 'sounds/chicken.mp3',
-    image: 'https://www.clipartmax.com/png/middle/27-270437_cute-white-chicken-cute-chicken-clipart.png'
+    image: 'images/animals/chicken.png'
   },
   {
     id: 7,
     name: 'Chick',
     sound: 'sounds/chick.mp3',
-    image: 'https://i7.pngguru.com/preview/275/634/445/yellow-hair-chicken-little-yellow-chicken-vector-cute-little-yellow-chicken.jpg'
+    image: 'images/animals/chick.png',
+    url: 'https://i7.pngguru.com/preview/275/634/445/yellow-hair-chicken-little-yellow-chicken-vector-cute-little-yellow-chicken.jpg'
   },
   {
     id: 8,
     name: 'Rooster',
     sound: 'sounds/rooster.mp3',
-    image: 'https://lh3.googleusercontent.com/proxy/jODNBhV19VyO8xYlgi8v75LHalUljjb7QLRrEsGNu8pzVUbBkpsxALoh2KTbF1o81TZooTiUI55McyDiohkwuYeSs26BsK9MgrHf1ZCH0l84_1kvtJKUnT0NX8WciSvKWfNQnkRqc32vwuj7YdiVbYVkKe8lpGA0KeeBfTID2Xn6ep2fhK0F'
+    image: 'images/animals/rooster.png'
   },
   {
     id: 9,
     name: 'Cat',
     sound: 'sounds/cat.mp3',
-    image: 'https://i7.pngguru.com/preview/470/437/120/cat-kitten-cartoon-drawing-clip-art-cartoon-images-of-cats.jpg'
+    image: 'images/animals/cat.png',
+    url: 'https://i7.pngguru.com/preview/470/437/120/cat-kitten-cartoon-drawing-clip-art-cartoon-images-of-cats.jpg'
   },
   {
     id: 10,
     name: 'Dog',
     sound: 'sounds/dog.mp3',
-    image: 'https://library.kissclipart.com/20190224/wwq/kissclipart-dog-clipart-puppy-maltese-dog-beagle-3400a99cc8df2422.png'
+    image: 'images/animals/dog.png'
   },
   {
     id: 11,
     name: 'Horse',
     sound: 'sounds/horse.mp3',
-    image: 'https://library.kissclipart.com/20191028/zae/kissclipart-animal-figure-yellow-cartoon-horse-toy-654b2e31b4e10b6e.png'
+    image: 'images/animals/horse.png'
   },
   {
     id: 12,
     name: 'Donkey',
     sound: 'sounds/donkey.mp3',
-    image: 'https://i7.pngguru.com/preview/634/614/329/cartoon-clip-art-dark-green-cartoon-donkey.jpg'
+    image: 'images/animals/donkey.png'
   },
   {
     id: 13,
     name: 'Rabbit',
     sound: '',
-    image: 'https://www.clipartmax.com/png/middle/88-888187_cute-bunny-cartoon-transparent-clip-art-image-rabbit-clipart.png'
+    image: 'images/animals/rabbit.png'
   },
   {
     id: 14,
     name: 'Pig',
     sound: 'sounds/pig.mp3',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSnuWRzhJX4-lPflXFVoFw7Hpz1RQRN7YQaoyqH9z4BN32jwprp&usqp=CAU'
+    image: 'images/animals/pig.png'
   },
   {
     id: 15,
     name: 'Duck',
     sound: 'sounds/duck.mp3',
-    image: 'https://webstockreview.net/images/duckling-clipart-mama-duck-16.png'
+    image: 'images/animals/duck.png'
   },
   {
     id: 16,
     name: 'Duckling',
     sound: 'sounds/duck.mp3',
-    image: 'https://clipartstation.com/wp-content/uploads/2018/09/baby-duckling-clipart-7.jpg'
+    image: 'images/animals/duckling.png'
   },
   {
     id: 17,
     name: 'Turkey',
     sound: 'sounds/turkey.mp3',
-    image: 'https://www.epicentrofestival.com/wp-content/uploads/2019/12/Cartoon-Turkey-Images-Clip-Art-Turkey-Clipart-Free03063658-720x847.jpg'
+    image: 'images/animals/turkey.png'
   },
   {
     id: 18,

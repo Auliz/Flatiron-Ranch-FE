@@ -1,9 +1,28 @@
 function ashleyMain () {
-
+  loadLeaderboard();
 }
 
 const usersUrl = 'http://localhost:3000/users'
 const userGamesUrl = 'http://localhost:3000/user_games'
+const usersLeaderboardUrl = 'http://localhost:3000/users/leaderboard'
+
+const leaderboardTableContainer = document.querySelector('#leaderboard-table')
+
+function loadLeaderboard () {
+  fetch(usersLeaderboardUrl)
+    .then (response => response.json())
+    .then (topUsers => {
+      topUsers.forEach(topUser => {
+        const leaderboardRow = `
+        <tr>
+          <th>${topUser.username}</th>
+          <th>${topUser.total_points}</th>
+        </tr>
+        `
+        leaderboardTableContainer.innerHTML += leaderboardRow
+      })
+    })
+}
 
 const usernameForm = document.querySelector('#username-form')
 let userInfo
@@ -89,10 +108,6 @@ startGameButton.addEventListener('click', event => {
   audio.play(); 
 })
 
-// function startGameSession (user) {
-
-// }
-
 function updateGameStats() {
   const userGameId = parseInt(gameStatsNumbers.dataset.gameId)
 
@@ -160,32 +175,6 @@ function updateUserStats() {
 
 const gameContainer = document.querySelector('#game')
 
-// function runGameEndModal () {
-
-//   const modal = `
-//     <div id="myModal" class="modal fade" role="dialog">
-//     <div class="modal-dialog">
-
-//       <!-- Modal content-->
-//       <div class="modal-content">
-//         <div class="modal-header">
-//           <button type="button" class="close" data-dismiss="modal">&times;</button>
-//           <h4 class="modal-title">Modal Header</h4>
-//         </div>
-//         <div class="modal-body">
-//           <p>Some text in the modal.</p>
-//         </div>
-//         <div class="modal-footer">
-//           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-//         </div>
-//       </div>
-
-//     </div>
-//     </div>
-//     `
-//   gameContainer.innerHTML += modal 
-// } 
-
 const gameEndStatsContainer = document.querySelector('#game-end-stats');
 
 function runGameEndStats () {
@@ -239,6 +228,7 @@ mainLogo.addEventListener('click', event => {
   logoSound.src = 'sounds/cow.mp3';
   animalSound.play();
 })
+
 
 
 
