@@ -107,102 +107,108 @@ const animals = [
     id: 18,
     name: 'Bee',
     sound: 'sounds/bee.mp3',
-    image: 'https://w0.pngwave.com/png/444/93/bee-cartoon-bee-png-clip-art.png'
+    image: 'images/animals/bee.png'
   },
   {
     id: 19,
     name: 'Bison',
     sound: 'sounds/bison.mp3',
-    image: 'https://cdn1.vectorstock.com/i/1000x1000/30/50/cartoon-happy-bison-vector-21053050.jpg'
+    image: 'images/animals/bison.png'
   },
   {
     id: 20,
     name: 'Crow',
     sound: 'sounds/crow.mp3',
-    image: 'https://cdn4.vectorstock.com/i/1000x1000/45/03/cartoon-crow-isolated-on-white-background-vector-27154503.jpg'
+    image: 'images/animals/crow.png'
   },
   {
     id: 21,
     name: 'Egg',
     sound: '',
-    image: 'https://illustoon.com/photo/4771.png'
+    image: 'images/animals/egg.png'
   },
   {
     id: 22,
     name: 'Farmer',
     sound: 'sounds/farmer.mp3',
-    image: 'https://cdn5.vectorstock.com/i/1000x1000/36/34/cartoon-farmer-holding-a-rake-vector-24043634.jpg'
+    image: 'images/animals/farmer.png'
   },
   {
     id: 23,
     name: 'Goose',
     sound: 'sounds/goose.mp3',
-    image: 'https://image.freepik.com/free-vector/cartoon-goose-white-background_194935-44.jpg'
+    image: 'images/animals/goose.png'
   },
   {
     id: 24,
     name: 'Hay',
     sound: '',
-    image: 'https://cdn.clipart.email/a3e46ec779308e376243e4b76f59e4fb_844-hay-bales-stock-illustrations-cliparts-and-royalty-free-hay-_450-259.jpeg'
+    image: 'images/animals/hay.png'
   },
   {
     id: 25,
     name: 'Hen',
     sound: 'sounds/chicken.mp3',
-    image: 'https://i.pinimg.com/736x/08/36/41/083641776051c5204a6b457c31554a5e.jpg'
+    image: 'images/animals/hen.png'
   },
   {
     id: 26,
     name: 'Hive',
     sound: 'sounds/bee.mp3',
-    image: 'https://banner2.cleanpng.com/20180404/rsw/kisspng-beehive-tree-hay-day-honey-bee-beehive-5ac5607f8b1160.8153780315228847355696.jpg'
+    image: 'images/animals/hive.png'
   },
   {
     id: 27,
     name: 'Llama',
     sound: 'sounds/llama.mp3',
-    image: 'https://w1.pngwave.com/png/912/361/193/llama-camelid-alpaca-cartoon-livestock-snout-wildlife-png-clip-art.png'
+    image: 'images/animals/llama.png'
   },
   {
     id: 28,
     name: 'Bucket',
     sound: '',
-    image: 'https://cdn5.vectorstock.com/i/1000x1000/30/74/wooden-bucket-with-milk-splash-isolated-on-white-vector-5543074.jpg'
+    image: 'images/animals/bucket.png'
   },
   {
     id: 29,
     name: 'Pail',
     sound: '',
-    image: 'https://w7.pngwing.com/pngs/873/417/png-transparent-bucket-drawing-cartoon-milk-pail-color-lid-bucket-and-spade.png'
+    image: 'images/animals/pail.png'
   },
   {
     id: 30,
     name: 'Tractor',
     sound: '',
-    image: 'https://www.clipartmax.com/png/middle/54-545705_tractor-cartoon-farm-clip-art-tractor-cartoon-farm-clip-art.png'
+    image: 'images/animals/tractor.png'
   },
   {
     id: 31,
     name: 'Rake',
     sound: '',
-    image: 'https://cdn3.vectorstock.com/i/1000x1000/23/87/rake-with-a-wooden-handle-icon-cartoon-style-vector-9582387.jpg'
+    image: 'images/animals/rake.png'
   },
   {
     id: 32,
     name: 'Scarecrow',
     sound: '',
-    image: 'https://img.favpng.com/17/5/22/scarecrow-icon-scalable-vector-graphics-png-favpng-eiDqdFMs6iyjFNyQHk1jE6V6h.jpg'
+    image: 'images/animals/scarecrow.png'
   },
   {
     id: 33,
     name: 'Wheelbarrow',
     sound: '',
-    image: 'https://image.shutterstock.com/image-vector/yellow-wheelbarrow-260nw-373977295.jpg'
+    image: 'images/animals/wheelbarrow.png'
   },
   {
     id: 34,
     name: 'Windmill',
     sound: '',
-    image: 'https://mpng.subpng.com/20190506/pyp/kisspng-vector-graphics-farm-illustration-cattle-agricultu-windmill-clipart-rustic-frames-illustrations-hd-im-5ccfc82583d702.26037825155712106154.jpg'
+    image: 'images/animals/windmill.png'
+  },
+  {
+    id: 35,
+    name: 'Cow',
+    sound: 'sounds/cow.mp3',
+    image: 'images/animals/cow.png'
   }
   ]

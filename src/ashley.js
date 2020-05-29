@@ -2,6 +2,7 @@ function ashleyMain () {
   loadLeaderboard();
   logoSoundClick();
 }
+
 const tl = gsap.timeline();
 const usersUrl = 'http://localhost:3000/users'
 const userGamesUrl = 'http://localhost:3000/user_games'
@@ -227,6 +228,10 @@ function logoSoundClick () {
 function removeButtonsAndAnimal () {
   animalPic.style.display = 'none';
   answerBtns.style.display = 'none'
+}
+
+function badgeSelector(points) {
+  if (points) 
 }
 
 ashleyMain();
