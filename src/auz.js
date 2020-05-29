@@ -9,6 +9,7 @@ const animalPic = document.querySelector('#animal-pic')
 const optionOneBtn = document.querySelector('#option1')
 const optionTwoBtn = document.querySelector('#option2')
 const optionThreeBtn = document.querySelector('#option3')
+const gameEndStatsContainer = document.querySelector('#game-end-stats');
 
 function auzMain () {
   handleAnswerBtnClick();
@@ -26,6 +27,7 @@ function handleUsernameFormSubmit () {
     document.getElementById('login-view').style.display = 'none';
     document.getElementById('game-view').style.display = 'block';
     removeButtonsAndAnimal();
+    gameEndStatsContainer.style.display = 'none';
   })
 }
 
@@ -81,16 +83,12 @@ function handleAnswerBtnClick () {
       checkAnswer(event);
       updateGameStats();
         if (questionsAnswered === 5) {
-          alert('GAME OVER') 
+          alert('GAME OVER')
+          updateUserStats();
           removeButtonsAndAnimal();
-          numAnswered.style.display = 'none';
-          numCorrect.style.display = 'none';
           runGameEndStats();
-          // gameStatsNumbers.style.display = 'none';         
-          questionsAnswered = 0;
-          questionsCorrect = 0;
-          questionsIncorrect = 0;
-          animalsIncorrect = [];
+          gameEndStatsContainer.style.display = 'block';
+          resetGameData();
         }
     }
   })
@@ -119,5 +117,7 @@ function checkAnswer (event) {
     console.log('WRONG')
   }
 }
+
+
 
 auzMain();
