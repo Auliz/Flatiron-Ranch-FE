@@ -38,12 +38,6 @@
             </div>
           </div>
         </div>
-          <!-- <p class="trn">We're so glad to have you on the farm today!</p>
-          <p class="trn">Farmer Raza is looking for a capable ranch hand to identify everything. To help him, click the name of the picture that appears on the farm!</p>
-          <i class="fas fa-tractor icon-size trn"></i><span id="heading-span-tag" class="trn">  Hint: Try clicking on any animal you see!  </span><i class="fas fa-tractor icon-size"></i> -->
-          <!-- <div>
-            <img id="farmer-raza-tb" src="images/FarmerRazaTextBox.png">
-          </div> -->
         </div>
       <div id="username">
         <form id="username-form" class="form-group">
@@ -67,6 +61,23 @@
           />
         </form>
       </div>
+      <div id='leaderboard'>
+        <h3>Top Five Ranch Hands</h3>
+        <table id='leaderboard-table'>
+          <tr>
+            <th>Username</th>
+            <th>Total Points</th>
+          </tr>
+          <tr id='leaderboard-first-place-info'>
+            <th id='first-place-username'></th>
+            <th d='first-place-total-points'></th>
+          </tr>
+          <tr id='leaderboard-second-place-info'>
+            <th id='second-place-username'></th>
+            <th d='second-place-total-points'></th>
+          </tr>
+        </table>
+      </div>
     </div>
     <div id="game-view" class="container">
       <div id="user-session" class="container text-center">
@@ -76,10 +87,10 @@
         </div>
         <button id="start-game-btn" class="btn btn-start-game trn">Start Game</button>
       </div>
-
         <div id="pics" class="parent container" data-game-id="">
           <img class="image1 img-center farm-circle" src="images/FlatironFarmBackgroundSmaller.png">
           <img class="image2" data-id="" id="animal-pic" name="" src="">
+          <audio preload='auto' id='animal-sound' src=''></audio>
           <p id="on-farm-display-answered"></p>
           <p id="on-farm-display-correct"></p>
           <div id="game-end-stats" class="jumbotron">

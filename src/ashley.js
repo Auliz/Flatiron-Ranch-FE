@@ -1,9 +1,28 @@
 function ashleyMain () {
-
+  loadLeaderboard();
 }
 const tl = gsap.timeline();
 const usersUrl = 'http://localhost:3000/users'
 const userGamesUrl = 'http://localhost:3000/user_games'
+const usersLeaderboardUrl = 'http://localhost:3000/users/leaderboard'
+
+const leaderboardTableContainer = document.querySelector('#leaderboard-table')
+
+function loadLeaderboard () {
+  fetch(usersLeaderboardUrl)
+    .then (response => response.json())
+    .then (topUsers => {
+      topUsers.forEach(topUser => {
+        const leaderboardRow = `
+        <tr>
+          <th>${topUser.username}</th>
+          <th>${topUser.total_points}</th>
+        </tr>
+        `
+        leaderboardTableContainer.innerHTML += leaderboardRow
+      })
+    })
+}
 
 const usernameForm = document.querySelector('#username-form')
 let userInfo
@@ -78,11 +97,11 @@ startGameButton.addEventListener('click', event => {
 
   animalPic.style.display = 'block';
   answerBtns.style.display = 'block'
+
+  let audio = new Audio('sounds/cowboy_theme.mp3');
+  audio.volume = 0.02;
+  audio.play(); 
 })
-
-// function startGameSession (user) {
-
-// }
 
 function updateGameStats() {
   const userGameId = parseInt(gameStatsNumbers.dataset.gameId)
@@ -202,10 +221,35 @@ function removeButtonsAndAnimal () {
 
 }
 
-
-
-
-
-
-
 ashleyMain();
+
+const mainLogo = document.querySelector('.main-logo');
+const logoSound = document.querySelector('#animal-sound')
+
+mainLogo.addEventListener('click', event => {
+  logoSound.src = 'sounds/cow.mp3';
+  animalSound.play();
+})
+
+
+
+
+// var audio = new Audio('sounds/cow.mp3');
+// audio.play(); 
+// console.log(audio)
+
+// animalPic.addEventListener('click', event => {
+//   // var x = document.getElementById("myAudio")
+//   // x.play()
+//   var audio = new Audio('sounds/cow.mp3');
+//   audio.play(); 
+// });
+
+// var soundID = "Thunder";
+// function loadSound () {
+//   createjs.Sound.registerSound("assets/thunder.mp3", soundID);
+// }
+
+// function playSound () {
+//   createjs.Sound.play(soundID);
+// }

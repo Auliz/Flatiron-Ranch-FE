@@ -46,12 +46,23 @@ function getRandom(arr, n) {
   loadAnswers(result);
 }
 
+const animalSound = document.querySelector('#animal-sound')
+
 function loadAnimalPicture (randArr) {
   const randomIndex = Math.floor(Math.random() * 3)
   const animalToRender = randArr[randomIndex]
   animalPic.src = animalToRender.image
   animalPic.name = animalToRender.name
   animalPic.dataset.id = animalToRender.id
+  animalSound.src = animalToRender.sound
+  if (animalSound.src !== '') {
+    animalPic.addEventListener('click', event => {
+      // var x = document.getElementById("myAudio")
+      // x.play()
+      // let audio = new Audio(`${animalToRender.sound}`);
+      animalSound.play(); 
+    })
+  }
 }
 
 function loadAnswers (randArr) {
